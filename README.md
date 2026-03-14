@@ -14,49 +14,49 @@
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### Step 1 — Install Node.js
 Download and install from: https://nodejs.org (choose LTS version)
 Verify: `node --version` and `npm --version`
 
 ### Step 2 — Install Frontend
-\`\`\`bash
+```bash  
 cd frontend
 npm install
-\`\`\`
+```
 
 ### Step 3 — Install Backend
-\`\`\`bash
+```bash
 cd backend
 npm install
-\`\`\`
+```
 
 ---
 
-## ▶️ Running the Project
+## Running the Project
 
 ### Terminal 1 — Start Backend
-\`\`\`bash
+```bash
 cd backend
 npm run dev
 # Runs at http://localhost:5000
-\`\`\`
+```
 
 ### Terminal 2 — Start Frontend
-\`\`\`bash
+```bash
 cd frontend
 npm run dev
 # Runs at http://localhost:3000
-\`\`\`
+```
 
 Open browser → http://localhost:3000
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
-\`\`\`
+```
 fincal-retirement/
 ├── frontend/              # Next.js 15 App
 │   ├── app/               # Pages (folder = route)
@@ -71,7 +71,7 @@ fincal-retirement/
 │   │   ├── education/     # Tooltips, concept explainers
 │   │   └── ui/            # Reusable: Button, Card, Slider...
 │   ├── lib/
-│   │   ├── formulas.js    # ⭐ All financial formulas (PDF-based)
+│   │   ├── formulas.js    # All financial formulas (based on PDF)
 │   │   ├── constants.js   # Default rates and assumptions
 │   │   └── exportExcel.js # Excel generation (SheetJS)
 │   ├── hooks/             # Custom React hooks
@@ -83,11 +83,11 @@ fincal-retirement/
         ├── routes/        # API endpoints
         ├── controllers/   # Business logic
         └── utils/         # Formulas + validators
-\`\`\`
+```
 
 ---
 
-## 🔗 API Endpoints
+## API Endpoints
 
 | Method | URL | Description |
 |--------|-----|-------------|
@@ -97,7 +97,7 @@ fincal-retirement/
 | POST | /api/calculate/lumpsum | Lumpsum future value |
 
 ### Example Request — Retirement Calculation:
-\`\`\`json
+```json
 POST http://localhost:5000/api/calculate/retirement
 {
   "currentAge": 25,
@@ -111,11 +111,11 @@ POST http://localhost:5000/api/calculate/retirement
   "inflationRate": 6,
   "postRetirementReturn": 6
 }
-\`\`\`
+```
 
 ---
 
-## 📐 Formulas Used (from PDF)
+## Formulas Used (from PDF)
 
 | Formula | Usage |
 |---------|-------|
@@ -128,7 +128,7 @@ POST http://localhost:5000/api/calculate/retirement
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
@@ -143,7 +143,7 @@ POST http://localhost:5000/api/calculate/retirement
 
 ---
 
-## 📌 Key Features
+## Key Features
 
 - Scroll Storytelling — "Meet Rahul & Vikram" compounding visual
 - Conversational Quiz — 5 steps, no finance knowledge needed
