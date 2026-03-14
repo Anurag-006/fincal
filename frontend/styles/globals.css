@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,7 +27,7 @@ html { scroll-behavior:smooth; }
 body {
   background: var(--bg);
   color: var(--ink);
-  font-family: 'Montserrat', Arial, Verdana, sans-serif;
+  font-family: var(--font-montserrat), Arial, Verdana, sans-serif;
   overflow-x: hidden;
 }
 
